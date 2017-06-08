@@ -29,4 +29,4 @@ after submit, direct feedback of a europa map where people share the same kind o
 (could have been by nomination but then should have asked people to use identify themselve)
 
 Limitations: 
-reduce data capture for being ready
+reduce data capture for being ready to gather a large amount of interactions done by the crowd of users that will enjoy the tool

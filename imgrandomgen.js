@@ -1,7 +1,7 @@
 //id of the DOM element
 var divPlaceHolder = "smileGrid";
 //array of images to be loaded
-var images = ["image1","image2","image3","image4","image5","image6","image7","image8","image9","image10","image11","image12","image13","image14","image15","image16","image17","image18","image19","image20","image21","image22","image23","image24","image25","image26","image27","image28","image29","image30","image31","image32"];
+var images = ["images/smiles/01-smile.jpg","images/smiles/02-smile.jpg","images/smiles/03-smile.jpg","images/smiles/04-smile.jpg","images/smiles/05-smile.jpg","images/smiles/06-smile.jpg","images/smiles/07-smile.jpg","images/smiles/08-smile.jpg"];
 
 (function (){
     //number of columns

@@ -2,6 +2,10 @@
 Goal Description: 
 Match the Context of your Feelings of Happiness with an Expression of Joy
 
+Benefits: 
+being aware of the happiness to live an existence as a european citizen 
+to gather european citizens happiness testimony 
+
 Main requirements: 
 anonymous participation, no login, no tracking 
 work with links of idioms without using any written language
@@ -17,3 +21,6 @@ gather images of expressions of emotion
 Promotion of the App: 
 after submit, direct feedback of a europa map where people share the same kind of feelings
 (could have been by nomination but then should have asked people to use identify themselve)
+
+Limitations: 
+reduce data capture for being ready

@@ -31,4 +31,6 @@ after submit, direct feedback of a europa map where people share the same kind o
 
 Limitations: 
 reduce data capture for being ready to gather a large amount of interactions done by the crowd of users that will enjoy the tool
-======
+
+Introduction Text: 
+Choose from the images on the left the expression that corresponds most to the mood evoked by the image on the right

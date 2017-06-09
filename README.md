@@ -1,7 +1,7 @@
 # Smile-to-Europe
 
 ## Goal
-Match the Context of your Feelings of Happiness with an Expression of Joy
+To give to the people a path to express positive emotions by matching the context of their feelings of happiness with a representation of joy.
 
 ## Description
 Offer to people a mean to recognise the kind of situation of which they are happy and match it with the representation of their mood
@@ -11,15 +11,17 @@ being aware of the happiness to live an existence as a european citizen
 to gather european citizens happiness testimony 
 make graphical reports organise by categories to show outcomes 
 
-## Requirements
+## Ethical Requirements
 anonymous participation, no login, no tracking 
-work with links of idioms without using any written language
-better without having to moderate by human ressources 
-provide people the option to submit new smiles or sujects
+open to everybody (no fee, no grant, no limit)
+operates as few as possible with written language
+operates without having to be moderated by human ressources 
+provides people with the option to submit new smiles or sujects of hapiness
 
 ## Means
-prototype based on a web page
-next evolution could be a portable app or a widget
+prototype developed as a web page
+the final version would be a portable application or a widget
+will feed a lightweight database from which results can be used
 
 ## Components and Contents 
 gather images of sujects which can provide feelings of happiness

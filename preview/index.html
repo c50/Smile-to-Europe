@@ -71,8 +71,8 @@
 					  <p>Some text in the modal.</p>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-primary">Share on facebook</button>
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<!--button type="button" class="btn btn-primary">Share on facebook</button-->
+						<center><button type="button" class="btn btn-primary btn-lg btn-block" data-dismiss="modal">Share on facebook</button></center>
 					</div>
 				  </div>
 				  
@@ -94,7 +94,7 @@
 				  var element_right_index = document.getElementsByClassName("image_right")[0].id;
 				  var image_right = images_right[element_right_index];
 				  
-				  var txt ="<img src=" + image_right.path + " > </img>";
+				  var txt ="<center><img src=" + image_right.path + " style='max-width:300px;' > </img></center>";
 				  
 				 // var txt = "value : " + event.currentTarget.value;
 				  //txt += "<br> value :  " + image_right.value;

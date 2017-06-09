@@ -1,6 +1,6 @@
 # Smile-to-Europe
 
-Goal Description: 
+## Goal Description 
 Match the Context of your Feelings of Happiness with an Expression of Joy
 
 LargeDescription: 

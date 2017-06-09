@@ -9,31 +9,23 @@ var images = [
 {"path":"images/smiles/05-smile.jpg", "value":5},
 {"path":"images/smiles/06-smile.jpg", "value":6},
 {"path":"images/smiles/07-smile.jpg", "value":7},
-{"path":"images/smiles/08-smile.jpg", "value":8}
+{"path":"images/smiles/08-smile.jpg", "value":8},
+{"path":"images/smiles/09-smile.jpg", "value":9},
 ];
 
 (function (){
-    //number of columns
-    var gridCols = 6;
-    //number of lines calculated based in the number of columns and number of images
-    var gridLns = Math.ceil(images.length / gridCols);
     var div = document.getElementById(divPlaceHolder);
     var smileTable = "";
     var imgtoadd = "";
 	var value = 0;
     var indextoextract = 0;
-    for (var i = 1; i <= gridLns; i++) {
-        smileTable += "<div class='row'>";
-        for (var j = 1; j <= gridCols; j++) {
-            if (images.length > 0) {
-                indextoextract = Math.ceil(Math.random()*images.length) - 1;
-                imgtoadd = images[indextoextract].path;
-				value = images[indextoextract].value;
-                smileTable += "<div class='cell' id='cell" + i + "_" + j + "'><button class='smile' type='submit' name='image" + j + "' value='" + value + "'><img src='" + imgtoadd + "' /></button>";
-                images.splice(indextoextract,1);
-            }
-        }
-        smileTable += "</div>";
+	var nbOfImages = images.length;
+    for (var i = 0; i < nbOfImages; i++) {
+		indextoextract = Math.ceil(Math.random()*images.length) - 1;
+        imgtoadd = images[indextoextract].path;
+		value = images[indextoextract].value;
+        smileTable += "<button class='smile' type='submit' name='image" + i+1 + "' value='" + value + "'><img src='" + imgtoadd + "' /></button>";
+		images.splice(indextoextract,1);
     }
     div.innerHTML = smileTable;
 })();

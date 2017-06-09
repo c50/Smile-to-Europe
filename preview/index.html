@@ -65,7 +65,7 @@
 				  <div class="modal-content">
 					<div class="modal-header">
 					  <button type="button" class="close" data-dismiss="modal">&times;</button>
-					  <h4 class="modal-title">Result</h4>
+					  <center><h3 class="modal-title">I SMILED FOR</h3></center>
 					</div>
 					<div class="modal-body" id="modal-body">
 					  <p>Some text in the modal.</p>
@@ -94,8 +94,10 @@
 				  var element_right_index = document.getElementsByClassName("image_right")[0].id;
 				  var image_right = images_right[element_right_index];
 				  
-				  var txt = "value : " + event.currentTarget.value;
-				  txt += "<br> value :  " + image_right.value;
+				  var txt ="<img src=" + image_right.path + " > </img>";
+				  
+				 // var txt = "value : " + event.currentTarget.value;
+				  //txt += "<br> value :  " + image_right.value;
 				  $('#modal-body').html(txt);
 				  
 				  $('#myModal').modal();

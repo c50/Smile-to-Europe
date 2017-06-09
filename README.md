@@ -34,3 +34,5 @@ reduce data capture for being ready to gather a large amount of interactions don
 
 Introduction Text: 
 Choose from the images on the left the expression that corresponds most to the mood evoked by the image on the right
+
+Source idea: Estimating smile intensity: A better way http://www.pitt.edu/~jeffcohn/biblio/PRL_Final_Submitted_Version.pdf

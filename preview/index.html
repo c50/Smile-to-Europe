@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Smile to Europe</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="theme/main.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/9b1a220716.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body>
+		<div class="navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="logo" href="#"><i class="fa fa-smile-o" aria-hidden="true"></i> Smile to Europe</a>
+				</div>
+			</div>
+		</div>
+		<div class="content container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="intro">
+						<p>Choose from the images on the left the expression that corresponds most to the mood evoked by the image on the right</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<h3>Choose your smile</h3>
+					<form action="#" method="post" accept-charset="utf-8" id="myform">
+					  <div id="smileGrid" class="smile-images"></div>
+					</form>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<div class="smile-to-image">
+					<!-- smile images need to come here -->
+					<h3>Happiness</h3>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p> 
+				</div>
+				</div>
+			</div>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+				
+				  <!-- Modal content-->
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal">&times;</button>
+					  <h4 class="modal-title">Result</h4>
+					</div>
+					<div class="modal-body" id="modal-body">
+					  <p>Some text in the modal.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary">Share on facebook</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				  </div>
+				  
+				</div>
+			 </div>
+			
+		</div>
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/imgrandomgen.js"></script>
+	<script type="text/javascript">
+			$(document).ready(function() {
+				$('.smile').click(function(event) {
+				  //alert($(this).val());
+				  
+				  $('#modal-body').text("value : " + event.currentTarget.value);
+				  $('#myModal').modal();
+				});
+				
+				$("#myform").on("submit",function(event){event.preventDefault()});
+				
+				$('#myModal').on('hidden.bs.modal', function () {
+					location.reload();
+				});
+			});
+			
+		</script>
+	</body>
+
+</html>

@@ -6,6 +6,11 @@ body {
 
 button {background:none; border:none; padding:0px;}
 
+.image_right
+{
+	padding-top:75px;
+}
+
 .smile-images img {
   max-width: 180px;
   -moz-transition: all 0.3s;

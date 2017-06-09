@@ -38,6 +38,7 @@
 				<div class="col-xs-12">
 					<div class="intro">
 						<p>Choose from the images on the left the expression that corresponds most to the mood evoked by the image on the right</p>
+						<button type="button" class="btn btn-info btn-lg" id="smile_more_button">Smile More</button>
 					</div>
 				</div>
 			</div>
@@ -50,11 +51,9 @@
 					</form>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-					<div class="smile-to-image">
+					<div id="smile-to-image" class="smile-to-image">
 					<!-- smile images need to come here -->
-					<h3>Happiness</h3>
-					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p> 
-				</div>
+					</div>
 				</div>
 			</div>
 
@@ -91,15 +90,26 @@
 			$(document).ready(function() {
 				$('.smile').click(function(event) {
 				  //alert($(this).val());
+
+				  var element_right_index = document.getElementsByClassName("image_right")[0].id;
+				  var image_right = images_right[element_right_index];
 				  
-				  $('#modal-body').text("value : " + event.currentTarget.value);
+				  var txt = "value : " + event.currentTarget.value;
+				  txt += "<br> value :  " + image_right.value;
+				  $('#modal-body').html(txt);
+				  
 				  $('#myModal').modal();
+				});
+				
+				$('#smile_more_button').click(function(event) 
+				{
+					location.reload();	
 				});
 				
 				$("#myform").on("submit",function(event){event.preventDefault()});
 				
 				$('#myModal').on('hidden.bs.modal', function () {
-					location.reload();
+					location.reload();					
 				});
 			});
 			

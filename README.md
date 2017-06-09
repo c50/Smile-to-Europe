@@ -1,4 +1,5 @@
 # Smile-to-Europe
+
 Goal Description: 
 Match the Context of your Feelings of Happiness with an Expression of Joy
 
@@ -30,3 +31,4 @@ after submit, direct feedback of a europa map where people share the same kind o
 
 Limitations: 
 reduce data capture for being ready to gather a large amount of interactions done by the crowd of users that will enjoy the tool
+======

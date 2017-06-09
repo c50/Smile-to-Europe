@@ -18,7 +18,7 @@ var images = ["images/smiles/01-smile.jpg","images/smiles/02-smile.jpg","images/
             if (images.length > 0) {
                 indextoextract = Math.ceil(Math.random()*images.length) - 1;
                 imgtoadd = images[indextoextract];
-                smileTable += "<div class='cell' id='cell" + i + "_" + j + "'><img src='" + imgtoadd + "' /></div>";
+                smileTable += "<div class='cell' id='cell" + i + "_" + j + "'><button class='smile' type='submit' name='image" + j + "' value='" + j + "'><img src='" + imgtoadd + "' /></button>";
                 images.splice(indextoextract,1);
             }
         }

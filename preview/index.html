@@ -1,0 +1,41 @@
+<html>
+
+	<head>
+		<title>Smile2Europe</title>
+		
+		<style type="text/css">
+			.smile { float: left; }
+			button { background: none; border: none; }
+			.smile img { 
+				opacity: .9; 
+				width: 100%; 
+				max-width: 100px; 
+				height: auto;
+				-webkit-transition: all 100ms ease-in;
+			     -moz-transition: all 100ms ease-in;
+			          transition: all 100ms ease-in; 
+			}
+			.smile:hover img{ opacity: 100; }
+		</style>
+
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.smile').click(function() {
+				  alert($(this).val());
+				});
+			});
+		</script>
+
+	</head>
+
+	<body>
+
+		<form action="#" method="post" accept-charset="utf-8">
+		  <div id="smileGrid"></div>
+			<script type="text/javascript" src="scripts/imgrandomgen.js"></script>
+		</form>
+		
+	</body>
+
+</html>

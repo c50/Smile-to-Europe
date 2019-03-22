@@ -19,7 +19,7 @@ body {
 }
 
 .smile-images img:hover {
-  border: 3px solid red;
+  border: 3px solid rgb(4, 0, 255);
 }
 
 .intro {
